@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sagar Kunwar</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/fa.css">
+</head>
+
+<body class="container">
+	<!-- Page Wrapper -->
+	<div id="Wrapper">
+		<div class="row justify-content-center">
+			<div class="col-6 col-md-3">
+				<figure class="figure">
+					<img class="avatar img-thumbnail" src="images/p1.jpg" alt="avatar" width="200" height="150" />
+				</figure>
+			</div>
+		</div>
+		<div class="text-center">
+			<p><label>I am</label>
+				<name>Sagar Kunwar</name><br>
+				<label>IT Engineer, Web Developer</label>
+			</p>
+			<br>
+			<!-- Links -->
+			<p>
+				<a href="https://github.com/KunwarSagar" target="_blank">
+					<i class="fab fa-github-square"></i>
+				</a>&nbsp;
+				<a href="https://gitlab.com/kunwarsagarasmh9" target="_blank">
+					<i class="fab fa-gitlab"></i>
+				</a>&nbsp;
+				<a href="https://www.sagarkunwar.com.np/" target="_blank">
+					<i class="fas fa-blog"></i>
+				</a>&nbsp;
+				<a href="https://www.linkedin.com/in/sagar-kunwar" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</p>
+			<hr class="style">
+		</div>
+
+		<!-- Menu -->
+		<div>
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link active" href="#" id="Skills" onclick="return false;">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="Projects" onclick="return false;">Projects Done</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="About" onclick="return false;">About</a>
+				</li>
+			</ul>
+		</div>
+		<br>
+		<div class="content">
+			<div class="Skills active text-center" id="Skills">
+				<span class="btn btn-danger tags">#HTML</span>
+				<span class="btn btn-danger tags">#CSS</span>
+				<span class="btn btn-danger tags">#JS</span><br>
+				<span class="btn btn-danger tags">#Laravel</span>
+				<span class="btn btn-danger tags">#PHP</span>
+				<span class="btn btn-danger tags">#JAVA</span>
+				<span class="btn btn-danger tags">#SpringMVC</span><br>
+				<span class="btn btn-danger tags">#MYSQL</span>
+				<span class="btn btn-danger tags">#GIT</span>
+				<span class="btn btn-danger tags">#GULP</span>
+				<span class="btn btn-danger tags">#NPM</span>
+			</div>
+			<div class="Projects text-center" id="Projects">
+				<span class="btn btn-danger tags">Store Management Software</span>
+				<span class="btn btn-danger tags">Livestock Management Software</span><br>
+				<span class="btn btn-danger tags">Account Software</span>
+				<span class="btn btn-danger tags">CMS</span>
+				<span class="btn btn-danger tags">Progress Reporting System</span><br>
+				<span class="btn btn-danger tags">Information Tracking System</span>
+				<span class="btn btn-danger tags">Project Planning System</span><br>
+				<span class="btn btn-danger tags">Different Dynamic Websites </span>
+			</div>
+			<div class="About text-center" id="About">
+				Born in Accham, Nepal. I spent my childhood and did most of the schooling (up to 9) from Birendra Vidya
+				Mandir H.S. School,
+				Tikapur
+				Kailali and 10th(SLC) from my own home town. After SLC I moved to Kathmandu, Nepal for my +2 (11th &
+				12th)
+				studies where I was enrolled in Computer Science. I did +2 from Nepal Mega College, Babarmahal. While
+				Studiyng at this college I pretty much realised what I wanted to do in my life so I joined IT
+				Engineering at Cosmos college of management and technology under
+				Pokhara Univerity to become a Software Engineer. After four years of
+				struggle, ups and downs finally an Enginner. During my college days I mostly focused on practical works
+				rather than theoretical knowledge.
+			</div>
+		</div>
+
+	</div>
+	<footer class="text-center">
+		<p>with <i class="fa fa-heart"></i></p>
+	</footer>
+	<!-- Scripts -->
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.Skills').show();
+			$('.Projects').hide();
+			$('.About').hide();
+
+			$('#Skills').click(function () {
+				$(this).addClass("active");
+				$('.Skills').show();
+				$('#Projects').removeClass("active");
+				$('.Projects').hide();
+				$('#About').removeClass("active");
+				$('.About').hide();
+			})
+			$('#Projects').click(function () {
+				$('#Skills').removeClass("active");
+				$('.Skills').hide();
+				$(this).addClass("active");
+				$('.Projects').show();
+				$('#About').removeClass("active");
+				$('.About').hide();
+			})
+			$('#About').click(function () {
+				$('#Skills').removeClass("active");
+				$('.Skills').hide();
+				$('#Projects').removeClass("active");
+				$('.Projects').hide();
+				$(this).addClass("active");
+				$('.About').show();
+			})
+		});
+	</script>
+</body>
+
+</html>
