@@ -28,16 +28,20 @@
 			<br>
 			<!-- Links -->
 			<p>
-				<a href="https://github.com/KunwarSagar" target="_blank">
+				<a href="https://github.com/KunwarSagar" target="_blank" data-toggle="tooltip" data-placement="bottom"
+					title="Github">
 					<i class="fab fa-github-square"></i>
 				</a>&nbsp;
-				<a href="https://gitlab.com/kunwarsagarasmh9" target="_blank">
+				<a href="https://gitlab.com/kunwarsagarasmh9" target="_blank" data-toggle="tooltip"
+					data-placement="bottom" title="Gitlab">
 					<i class="fab fa-gitlab"></i>
 				</a>&nbsp;
-				<a href="https://www.sagarkunwar.com.np/" target="_blank">
+				<a href="https://www.sagarkunwar.com.np/" target="_blank" data-toggle="tooltip" data-placement="bottom"
+					title="Blog">
 					<i class="fas fa-blog"></i>
 				</a>&nbsp;
-				<a href="https://www.linkedin.com/in/sagar-kunwar" target="_blank">
+				<a href="https://www.linkedin.com/in/sagar-kunwar" target="_blank" data-toggle="tooltip"
+					data-placement="bottom" title="LinkedIn">
 					<i class="fab fa-linkedin"></i>
 				</a>
 			</p>
@@ -107,6 +111,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script>
 		$(document).ready(function () {
+
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			});
 			$('.Skills').show();
 			$('.Projects').hide();
 			$('.About').hide();
