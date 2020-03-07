@@ -79,7 +79,8 @@ ul>li>a.active {
 
 .content {
     font-family: 'Space Mono', monospace;
-    min-height: 280px;
+    // min-height: 280px;
+    height: fit-content;
 }
 
 .tags {
