@@ -3,8 +3,8 @@
 
 body {
   font-family: "Space Mono", monospace;
-  background-image: url(../../images/pic02.jpg);
-  background-size: cover;
+  /* background-image: url(../../images/pic02.jpg);
+  background-size: cover; */
   color: #1d2433 !important;
 }
 
